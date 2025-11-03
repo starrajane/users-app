@@ -14,7 +14,7 @@ A simple Next.js application where Users can view a list of users displayed as c
 
 1. Clone the repository: 
 ```console
-npm install
+git clone https://github.com/starrajane/users-app
 ```
 2. Install dependencies:
 ```console
