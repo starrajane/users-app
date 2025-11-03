@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.JS User App
 
-## Getting Started
+A simple Next.js application where Users can view a list of users displayed as cards and create new users via a modal form with validations.
 
-First, run the development server:
+## Features
+-   **Users Page**: Displays a list of users from a JSON file.
+-   **User Cards**: Each card shows the user's name, company, and email.
+-   **Create User**: Button to open a modal with a form to add a new user.
+-   **Form Validations**: Client-side validations for the required fields in the create user form.
+-   **Persistence**: New users are added to the list and saved in the Users.json file.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+## Installation
+
+1. Clone the repository: 
+```console
+npm install
+```
+2. Install dependencies:
+```console
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Before running the app**: Place a `Users.json` file in the `data` folder with initial user data. 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+	This file is gitignored for privacy, so this must be added locally.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Run the development server:
+```console
+npm run dev
+```
 
-## Learn More
+5. Open [http://localhost:3000/users](http://localhost:3000/users) in your browser.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Usage
+-   Navigate to  `/users`  to view the list of users.
+-   Click "Create User" to open the modal and fill out the form.
+-   Submit the form to add a new user (validations will prevent invalid submissions).
